@@ -1,0 +1,40 @@
+# one time configuration on a system
+git config --global core.editor vim
+git config --global user.email "eric.w.macdonald@gmail.com"
+git config --global user.name "Eric MacDonald"
+git config --global color.ui auto
+
+# to verify
+git config --global user.name
+
+
+# to set up a repository
+echo "#create_deck_ascii.py <cli file name>" >> README.md
+echo "#This will read an ASCII cli and create:" >> README.md
+echo "#a movie of the layers, a file.list of " >> README.md
+echo "#all of the layers and a jpg for each  " >> README.md
+echo "#layer.  create_deck_binary.py works   " >> README.md
+echo "#for binary cli files.                 " >> README.md
+git init
+#repeat this for every file to be watched
+git add README.md
+
+#Perform the next two commands to update to new version
+git commit -m "first commit"
+git remote add origin https://github.com/eric-macdonald/smax_projection.git
+
+# to do this you will need to generate a token from github,
+# 	settings
+#	developers settings
+# 	personal token for your computer
+#	Use token as password
+git push -u origin master
+
+git status
+git diff 
+
+
+git remote show origin
+
+pull before push to synchronize
+

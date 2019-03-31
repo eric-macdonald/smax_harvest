@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Name=Project
+Type=Application
+Icon=web-browser.png
+Terminal=true
+Exec=lxterminal -e "/home/pi/projection/project.sh"
